@@ -55,8 +55,6 @@ export enum MitigationTypes {
 export const mitigations: { [mitigationType in MitigationTypes]: string } = {
   /**
    * Problems with the OAS
-   *
-   * Should be caught by the module oas-validator
    */
   INVALID_OAS: 'Ignore issue and continue.',
   UNNAMED_PARAMETER: 'Ignore parameter.',
